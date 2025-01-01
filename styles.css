@@ -1,0 +1,104 @@
+body{
+    background-color: #000000;
+    text-align: left;
+    margin:0;
+}
+
+
+img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+#login_btn_wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 2rem;
+    margin: 1rem 1rem;
+}
+
+.login_btn{
+    padding: 0.25rem 2rem;
+    font-size: large;
+    border-radius: 8px;
+}
+
+#projects_wrapper, #login_wrapper{
+    color: whitesmoke;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    border:1px solid #474747;
+    background-color: #262626;
+    border-radius: 5px;
+}
+
+#login_wrapper{
+    text-align: center;
+}
+
+.project_card, #login_form{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding: 0.75rem;
+}
+
+
+
+.card_header{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    justify-content: center;
+    align-items: start;
+}
+
+.vote_format{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;    
+}
+
+.vote_btn{
+    cursor: pointer;
+    padding: 0.25rem 1rem;
+    border: none;
+    color: rgb(241, 255, 251);
+    font-size: 1.5rem;
+    background-color: rgb(29, 208, 232);
+}
+
+.vote_btn:nth-child(1){
+    background-color: rgb(225, 95, 69);
+
+}
+
+.vote_btn:hover, .vote_btn:active{
+    color: rgb(233, 233, 233);
+    box-shadow: rgba(255, 253, 253, 0.936) 0px 1px 10px;
+}
+
+@media ( max-width : 500px) {
+    img{
+        width: 50%;
+    }
+
+    #projects_wrapper, #login_wrapper{
+        max-width: 80%;
+    }
+    
+    .project_card, #login_form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card_header{
+        max-width: 80%;
+    }
+}
